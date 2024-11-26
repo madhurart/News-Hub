@@ -28,7 +28,7 @@ export default function FetchNews() {
 
     fetchNews()
     setIsLoading(false)
-  },
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault()
