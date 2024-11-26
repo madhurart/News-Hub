@@ -15,7 +15,7 @@ export default function FetchNews() {
     setIsLoading(true)
 
     const fetchNews = async () => {
-      const url = `https://hn.algolia.com/api/v1/search?query=${query}`
+      const url = `https://hn.algolia.com/api/v1/search?query=${query}&api_key=${process.env.REACT_APP_API_KEY}``
       const res = await fetch(url)
       const data = await res.json()
       // You can change the number of items you get back in your response using
