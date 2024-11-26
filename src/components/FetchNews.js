@@ -24,11 +24,12 @@ export default function FetchNews() {
       // data.hits.length = 10
       setItems(data.hits)
       setLargeTitle(data.hits[0])
-    }
-
-    fetchNews()
-    setIsLoading(false)
-  };
+    } catch (error) {
+    console.error("Error fetching data:", error);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   const handleSubmit = (e) => {
     e.preventDefault()
