@@ -1,0 +1,112 @@
+.contact{
+  margin-top: 15vh;
+  margin-left: 25vh;
+}
+ .h1{
+  text-align: center;
+  /* color: var(--color-light); */
+  margin-bottom: 5vh;
+  margin-right: 25vh;
+  color: white;
+  font-size: 4vh;
+  margin-top: 5px;
+}
+
+
+
+.container.contact-container {
+  width:58%;
+  display: grid;
+  grid-template-columns: 50% 59%;
+  gap: 10rem;
+  /* background-color: red; */
+  margin-left: 70px;
+}
+.contact-options {
+  display: grid;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.contact-option {
+  background: var(--color-bg-varient);
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  border: 2px solid black;
+  transition: var(--transition);
+}
+.contact-option h4,
+h5 {
+  color: lavender;
+  font-size: 18px;
+}
+.contact-option:hover {
+  background: transparent;
+  background-color: var(--color-primary-varient);
+}
+.contact-icon {
+  margin-bottom: 0.6rem;
+
+  
+}
+.contact-option a {
+  font-size: 1.2rem;
+}
+.contact-option a:hover {
+  color: black;
+}
+form {
+  display: grid;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid black;
+  resize: none;
+  color: var(--color-primary-varient);
+  font-size: 1rem;
+}
+.button {
+  height: 6vh;
+  font-size: 15px;
+}
+
+
+
+/*-----Media q for medium device----*/
+@media screen and (max-width: 1024px) {
+  .container.contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+/*-----Media q for small device----*/
+@media screen and (max-width: 600px) {
+   .container.contact-container {
+      /* width: var(--container-width-sm);   */
+    /* margin-left: 0vh;
+    margin-right: 10vh; 
+   
+    /* align-items: center; */
+    /* margin-right: 30px; */
+    /* padding-left:14vh; */
+  } 
+  .contact{
+      
+    width: var(--container-width-sm);  
+    margin: auto;
+    /* padding-left: 4vh; */
+    
+  }
+  .h1{
+    margin-right: 10vh;
+    /* align-items: center; */
+  }
+} 

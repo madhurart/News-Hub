@@ -1,0 +1,46 @@
+.logo{
+  padding-top: 5vh;
+  padding-left: 25px;
+  padding-bottom: 5vh;
+}
+.navbar-social {
+  /* gap: 2rem;
+  display: flex;  */
+  /* justify-content: right;  */
+  /* padding-right: 5vh;
+  padding-left: 5vh; */
+  /* transform: rotate(90deg); 
+  margin-bottom: 1px; */
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  /* justify-content: center;    */
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 15rem;
+  margin-right: 40px;
+  
+  
+}
+.navbar-social a {
+  background: cornflowerblue;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: flex;
+  border: 2px solid black;
+   /* transform: rotate(30deg);  */
+}
+.navabar-social a:hover {
+  background: transparent;
+  color: var(--color-bg);
+}
+
+@media screen and (max-width: 600px) {
+  
+  .navbar-social {
+    /* margin-block: 2.5rem; */
+    padding-right: 1vh;
+   
+  }
+}
